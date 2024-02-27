@@ -53,8 +53,9 @@ function Weather() {
                 value={city}
                 onChange={handleInput}
                 />
-                <button onClick={handleUnitToggle}>{buttonText}</button>
                 <button onClick={handleSearch}>Search</button>
+                <button onClick={handleUnitToggle}>{buttonText}</button>
+                
             </div>
             {buttonClicked && city && weather &&
             <>
