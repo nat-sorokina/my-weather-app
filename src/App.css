@@ -1,38 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --section-overlay: rgba(0,0,0,0.5);
+    --background-overlay: rgba(0,0,0,0.2);
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/robert-lukeman-_RBcxo9AU-U-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+    width: 100vw;
+    height: 100vh;
+   background-color: var(--background-overlay)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section {
+    width: 70vw;
+    padding: 1rem;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.location-input, .section-temperature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--section-overlay);
+    border-radius: 0.4rem;
+    margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location-input input {
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+}
+
+.location-input input:focus {
+    outline: none;
+}
+
+.location-input input::placeholder {
+    color: white;
+}
+
+.location-input input:focus::placeholder {
+    color: transparent;
+}
+
+.location-input button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.location-input button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon h3 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.icon h1 {
+    text-transform: capitalize;
+}
+
+.temperature h1 {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .location-input button {
+        padding: 5px 25px;
+    }
 }
