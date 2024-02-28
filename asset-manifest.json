@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-weather-app/static/css/main.b102ead8.css",
+    "main.js": "/my-weather-app/static/js/main.b3e95f43.js",
+    "static/media/robert-lukeman-_RBcxo9AU-U-unsplash.jpg": "/my-weather-app/static/media/robert-lukeman-_RBcxo9AU-U-unsplash.635caf1707d46ac19b4d.jpg",
+    "index.html": "/my-weather-app/index.html",
+    "main.b102ead8.css.map": "/my-weather-app/static/css/main.b102ead8.css.map",
+    "main.b3e95f43.js.map": "/my-weather-app/static/js/main.b3e95f43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b102ead8.css",
+    "static/js/main.b3e95f43.js"
+  ]
+}
